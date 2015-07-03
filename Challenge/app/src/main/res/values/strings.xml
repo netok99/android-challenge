@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Flickr</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="splash">Flickr</string>
+    <string name="title_activity_splash_screen">Flickr</string>
+    <string name="titleToolbar">Flickr</string>
+    <string name="subtitleToolbar">HE:Mobile challenge</string>
+    <string name="noComments">No comments</string>
+
+</resources>

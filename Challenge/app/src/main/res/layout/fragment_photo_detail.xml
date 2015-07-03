@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/user_information"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:src="@drawable/account"/>-->
+
+    <TextView
+        android:id="@+id/tv_owner_information"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:textSize="16sp"
+        android:fontFamily="Roboto"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_photo_name_information"
+        android:textColor="@color/greyCustom"
+        android:layout_below="@+id/tv_owner_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:textSize="14sp"
+        android:fontFamily="Roboto"
+        android:paddingLeft="16dp"/>
+    <!--android:layout_alignLeft="@+id/tv_owner_information"-->
+
+    <ImageView
+        android:id="@+id/iv_image_information"
+        android:layout_below="@+id/tv_photo_name_information"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@null"
+        android:background="@color/black"
+        android:contentDescription="Image of User"/>
+
+    <LinearLayout
+        android:id="@+id/view_information"
+        android:layout_below="@+id/iv_image_information"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:paddingRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_image_comments_information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/comment_outline"
+                android:contentDescription="Image symbol comment"/>
+
+            <TextView
+                android:id="@+id/tv_sum_comments_information"
+                android:textColor="@color/greyCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                android:paddingLeft="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="16dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_image_views_information"
+                android:layout_alignLeft="@+id/tv_views_information"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/eye"
+                android:contentDescription="Image symbol numbers of view"/>
+
+            <TextView
+                android:id="@+id/tv_views_information"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/iv_image_information"
+                android:textColor="@color/greyCustom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="Roboto"
+                android:paddingLeft="2dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vw_divider"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/iv_image_information"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="0.8dp" />
+
+    <TextView
+        android:id="@+id/tv_nocomments_information"
+        android:layout_below="@+id/vw_divider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noComments"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        android:fontFamily="Roboto"
+        android:textColor="@color/greyCustom"/>
+
+    <ListView
+        android:id="@+id/list_comments_information"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/vw_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>
+
+

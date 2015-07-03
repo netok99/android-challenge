@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/tv_item_user_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="Roboto"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_item_comment"
+        android:textColor="@color/greyCustom"
+        android:layout_below="@+id/tv_item_user_comment"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="Roboto"/>
+
+</RelativeLayout>
